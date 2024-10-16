@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  next:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile-dev
+    container_name: my-site
+    # restart: always
+    volumes:
+      - ./app:/usr/src
+      - ./app/node_modules:/usr/src/node_modules
+      - ./app/.next:/usr/src/.next
+    ports:
+      - 3000:3000
+    command: /bin/sh -c "yarn run next"
+    # env_file:
+    #   - .env
+  storybook:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile-storybook
+    container_name: storybook
+    # restart: always
+    volumes:
+      - ./app:/usr/src
+      - ./app/node_modules:/usr/src/node_modules
+      - ./app/.next:/usr/src/.next
+    ports:
+      - 6006:6006
+    command: /bin/sh -c "yarn run storybook"
+    networks:
+      - my-site
+    tty: true
+volumes:
+  node_modules:
+networks:
+  my-site:
+    external: true
