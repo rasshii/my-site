@@ -8,9 +8,9 @@ services:
     container_name: my-site-front
     # restart: always
     volumes:
-      - ./app:/usr/src
-      - ./app/node_modules:/usr/src/node_modules
-      - ./app/.next:/usr/src/.next
+      - ./src:/usr/src
+      - ./src/node_modules:/usr/src/node_modules
+      - ./src/.next:/usr/src/.next
     ports:
       - 3000:3000
     command: /bin/sh -c "yarn run next"
@@ -23,9 +23,9 @@ services:
     #   container_name: storybook
     #   restart: always
     #   volumes:
-    #     - ./app:/usr/src
-    #     - ./app/node_modules:/usr/src/node_modules
-    #     - ./app/.next:/usr/src/.next
+    #     - ./src:/usr/src
+    #     - ./src/node_modules:/usr/src/node_modules
+    #     - ./src/.next:/usr/src/.next
     #   ports:
     #     - 6006:6006
     #   command: /bin/sh -c "yarn run storybook"
