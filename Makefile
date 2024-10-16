@@ -1,5 +1,9 @@
 init: #初回構築時に実行
-	docker network create next-blog
+	docker network create my-site
+	docker compose run next yarn install
+	@make build
+	@make up
+update:
 	docker compose run next yarn install
 	@make build
 	@make up
