@@ -49,5 +49,8 @@ added 361 packages, and audited 362 packages in 32s
 found 0 vulnerabilities
 Success! Created app at /Users/y_igarashi/LocalRepository/my-site/app
 
-y_igarashi@cdm230046 my-site %  
+y_igarashi@cdm230046 app % rm -rf node_modules/
+y_igarashi@cdm230046 app % rm pakage-lock.json/
+y_igarashi@cdm230046 app % mv app/ src/
+y_igarashi@cdm230046 my-site %  make init
 ```

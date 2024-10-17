@@ -13,7 +13,7 @@ services:
       - ./src/.next:/usr/src/.next
     ports:
       - 3000:3000
-    command: /bin/sh -c "yarn run next"
+    command: /bin/sh -c "yarn run dev"
     # env_file:
     #   - .env
     # storybook:

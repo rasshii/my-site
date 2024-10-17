@@ -4,7 +4,6 @@ init: #初回構築時に実行
 	@make build
 	@make up
 update:
-	docker compose run next yarn install
 	@make build
 	@make up
 build:

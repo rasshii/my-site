@@ -2,7 +2,7 @@ FROM node:20-alpine3.18
 
 WORKDIR /usr/src
 
-COPY ./app /usr/src
+COPY ./src /usr/src
 
 RUN yarn install
 
