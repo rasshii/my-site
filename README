@@ -1,4 +1,4 @@
-```
+```zsh
 y_igarashi@cdm230046 my-site % touch Makefile
 y_igarashi@cdm230046 my-site % touch docker-compose.yml
 y_igarashi@cdm230046 my-site % mkdir docker
@@ -53,6 +53,4 @@ y_igarashi@cdm230046 app % rm -rf node_modules/
 y_igarashi@cdm230046 app % rm pakage-lock.json/
 y_igarashi@cdm230046 app % mv app/ src/
 y_igarashi@cdm230046 my-site %  make init
-// 移行起動の際は下記コマンド
-y_igarashi@cdm230046 my-site %
 ```
