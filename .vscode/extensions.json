@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "bierner.markdown-preview-github-styles",
+    "mushan.vscode-paste-image",
+    "esbenp.prettier-vscode",
+    "DavidAnson.vscode-markdownlint"
+  ]
+}
