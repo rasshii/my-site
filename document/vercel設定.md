@@ -6,38 +6,38 @@ Githubアカウントでvercelにアカウント作成
 
 ## Create Project
 
-1. Add New...
+1. `Add New...`
 
     |<img src="./assets/paste/2024_10_18_12_04_47.png" width="700px">|
     |:--:|
 
-1. Project
+1. `Project`
 1. リポイジトリをインポート
 
     |<img src="./assets/paste/2024_10_18_12_50_11.png" width="700px">|
     |:--:|
 
-1. Root Directoryにsrcを選択してContinue
+1. `Root Directory`に`src`を選択して`Continue`
 
     |<img src="./assets/paste/2024_10_18_13_02_22.png" width="300px">|
     |:--:|
 
-1. Deploy
+1. `Deploy`
 
-1. Congratulations!
+1. `Congratulations!`
 
     |<img src="./assets/paste/2024_10_18_13_05_17.png" width="500px">|
     |:--:|
 
-1. strageタブを選択
-1. Create Database
-1. Postgresを選択
+1. `storage`タブを選択
+1. `Create Database`
+1. `Postgres`を選択
 
     |<img src="./assets/paste/2024_10_18_12_59_10.png" width="500px">|
     |:--:|
 
-1. Database Nameとregionを選択してCreate
-1. Connect
+1. `Database Name`と`region`を選択して`Create`
+1. `Connect`
 
     |<img src="./assets/paste/2024_10_18_13_06_44.png" width="700px">|
     |:--:|
@@ -51,7 +51,7 @@ Githubアカウントでvercelにアカウント作成
     npm i -g vercel
     ```
 
-1. Connect to a project
+1. `Connect to a project`
 
     ```bash
     cd src
@@ -121,9 +121,9 @@ Githubアカウントでvercelにアカウント作成
     ✨  Done in 111.30s.
     ```
 
-1. .env.local
+1. `.env.local`
 
     |<img src="./assets/paste/2024_10_18_13_24_30.png" width="700px">|
     |:--:|
 
-1. Copy Snippet -> .env.development.localに貼り付け
+1. `Copy Snippet` -> `.env.development.local`に貼り付け
